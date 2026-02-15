@@ -20,8 +20,15 @@
       </section>
 
       <section class="optimizer-panel" id="optimizer-panel" aria-live="polite" hidden>
-        <h2>Optimized Prompt</h2>
-        <p id="optimized-output"></p>
+        <div class="optimizer-header">
+          <h2>Optimized Prompt</h2>
+          <div class="optimizer-actions">
+            <button type="button" class="action-btn" id="copy-output-btn">Copy</button>
+            <button type="button" class="action-btn" id="clear-output-btn">Clear</button>
+          </div>
+        </div>
+        <textarea id="optimized-output" readonly aria-label="Optimized prompt output"></textarea>
+        <p class="helper-text" id="optimizer-status"></p>
       </section>
     </main>
 
